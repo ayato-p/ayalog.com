@@ -1,27 +1,50 @@
 @charset "utf-8"
 
 //= require reset
-
+html
+  height: 100%
+  
 body
+  height: 100%
   background: #FFFFFF
   text-align: center
   font-family: 'Revalia', cursive, 'Helvetica Neue',Helvetica,'ヒラギノ丸ゴ Pro W4','Hiragino Maru Gothic Pro',sans-serif
 
+ul
+  li
+    list-style: none
+    line-height: 1.4
+    &:before
+      content: '>>'
+      font-size: 14px
+      color: #87cefa
+      margin-left: -25px
+      margin-right: 10px
+      line-height: 16px
+
+a
+  color: #63c0f5
+  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5)
+  &:-webkit-any-link
+    text-decoration: underline
+    cursor: auto
+
+#sidebar
+  padding: 50px 0px
+  text-align: left
+  color: #eaeaea
+  background-color: #151515
+  
+.content
+  height: 100%
+  width: 810px
+  margin: 0 auto
+
 .hero
-  font-size: 200%
-  margin: 10%
+  font-size: 150%
+  margin: 0 auto
   .title
     color: #1f8dd6
   .tag-line
     color: #666666
-
-#wrap
-  width: 640px
-  margin : 0 auto
-
-.welcome
-  color: #777
-  margin: 100px auto
-  a 
-    color: #777
 
